@@ -1,5 +1,136 @@
+/*General*/
 
-
-h1{
-    font-family: 'DelaGothicOne-Regular', sans-serif;
+/*reset*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+/*
+PALETA DE COLORES
+Fondos y palabras destacadas: #FCECEC
+Color contraste 1: #F94E83
+Color contraste 2: #0E1E03
+Pop y pequeños detalles: #F4971C
+*/
+
+/*Header*/
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #0E1E03;
+    color: #272323;
+    height: 100px;
+}
+
+.Header-logo img {
+    max-height: 70px;
+    align-self:  center;
+}
+
+
+/*Banner Principal*/
+.Banner {
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: #0E1E03;
+}
+
+.Banner-subt {
+    font-family: 'PinyonScript-Regular';
+    color: #FCECEC;
+    font-size: 3rem;
+    
+}
+
+H1 {
+    font-family: 'DelaGothicOne-Regular', sans-serif;
+    color: #F94E83;
+    font-size: 5rem;
+}
+
+.Banner-h2 {
+    font-family: 'Outfit-Regular';
+    color: #F4971C;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+/*Sección About me*/
+.About {
+    flex-wrap: wrap;
+    background-color: #F94E83;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+}
+
+.About-type {
+    font-size: 5rem;
+    font-family: 'PinyonScript-Regular';
+    color: #FCECEC;
+    animation: marquee 10s linear infinite;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.About-txt {
+    display: block;
+    width: 20%;
+}
+
+.About-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+
+.About-title {
+    font-family: 'DelaGothicOne-Regular', sans-serif;
+    color: #FCECEC;
+    font-size: 2rem;
+}
+
+.About-p {
+    font-family: 'Outfit-Regular';
+    color: #FCECEC;
+    font-size: 1.5rem;
+   
+}
+
+.About-img {
+    max-width: 400px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
