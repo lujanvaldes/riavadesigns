@@ -9,37 +9,6 @@ que tenga el usuario en la web.
 */
 
 
-//   1. Constantes y Variables   //
-
-/// constantes
-
-
-
-
-
-/// variables
-
-
-
-
-//   2. Funciones utilitarias (reutilizables)   //
-
-
-
-
-//   3. Funciones principales de la web   //
-
-
-
-
-//   4. eventListeners   //
-
-
-
-//   5. Inicializar el programa   //
-
-
-
 
 
 
