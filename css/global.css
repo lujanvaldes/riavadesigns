@@ -20,12 +20,12 @@ Pop y pequeños detalles: #F4971C
 
 @font-face {
     font-family: 'PinyonScript-Regular';
-    src: url('fonts/PinyonScript-Regular.ttf') format('truetype');
+    src: url('./fonts/PinyonScript-Regular.ttf') format('truetype');
 } 
 
 @font-face {
     font-family: 'DelaGothicOne-Regular';
-    src: url('fonts/DelaGothicOne-Regular.ttf') format('truetype');
+    src: url('./fonts/DelaGothicOne-Regular.ttf') format('truetype');
 }
 
 
@@ -34,14 +34,14 @@ Pop y pequeños detalles: #F4971C
 
 @font-face {
     font-family: 'Outfit-Regular';
-    src: url('fonts/Outfit-Regular.ttf') format('truetype');
+    src: url('./fonts/Outfit-Regular.ttf') format('truetype');
     font-weight: 400; /*Variable REGULAR*/
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Outfit-Bold';
-    src: url('fonts/Outfit-Bold.ttf') format('truetype');
+    src: url('./fonts/Outfit-Bold.ttf') format('truetype');
     font-weight: 700; /*Variable BOLD*/
     font-style: normal;
 }
