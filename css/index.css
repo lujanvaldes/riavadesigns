@@ -7,13 +7,15 @@
     padding: 0;
 }
 
-/*
-PALETA DE COLORES
-Fondos y palabras destacadas: #FCECEC
-Color contraste 1: #F94E83
-Color contraste 2: #0E1E03
-Pop y pequeños detalles: #F4971C
-*/
+/*Para que el contenedor principal se vuelva horizontal
+.Container {
+    display: flex;
+    flex-direction: row; /*horizontal
+    height: 100vh;
+    width: max-content;
+}*/
+
+
 
 /*Header*/
 .Header {
@@ -225,8 +227,14 @@ H1 {
     padding-top: 50px;
 }
 
-
-
+/*
+section,
+header, 
+footer {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+}*/
 
 
 

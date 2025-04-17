@@ -46,3 +46,16 @@ Pop y pequeños detalles: #F4971C
     font-style: normal;
 }
 
+/*                    Desplazamiento horizontal                   
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 100vh;
+    white-space: nowrap;
+}
+
+html {
+    scroll-behavior: smooth; /*desplazamiento fluido*/
