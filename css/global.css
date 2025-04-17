@@ -1,3 +1,21 @@
+/*                        PALETA CROMÁTICA                         */
+
+:root {
+    --color-principal: #F94E83;
+    --color-secundario: #FCECEC;
+    --color-fondo: #0E1E03;
+    --color-texto: #FCECEC;
+    --color-acento: #F4971C;
+  }
+
+  /*
+PALETA DE COLORES
+Fondos y palabras destacadas: #FCECEC
+Color contraste 1: #F94E83
+Color contraste 2: #0E1E03
+Pop y pequeños detalles: #F4971C
+*/
+
 /*                           TIPOGRAFÍAS                           */
 
 @font-face {
@@ -27,3 +45,4 @@
     font-weight: 700; /*Variable BOLD*/
     font-style: normal;
 }
+
