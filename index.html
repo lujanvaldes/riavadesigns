@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Hola!  Mi nombre es Luján y estos son mis diseños/ilustraciones.">
+    <meta name="description" content="Hola!  Mi nombre es Luján y estas son mis ilustraciones.">
     <met a name="author" content="M. Luján Valdés">
         <meta name="copyright" content="RIAVA DESIGNS © illustrations 2025. All rights reserved">
         <meta name="keyword"
@@ -22,25 +21,33 @@
 
 <body>
     <div class="Container">
-        <!--HEADER-->
+        <!--Header-->
         <header class="Header">
-            <!--LOGO-->
-            <div class="Header-logo">
-                <picture>
-                    <!-- PARA AÑADIR EL MIN WIDTH:
-                    <source media="(max-width: 767px)" srcset="logo-movil.jpg">
-                    <source media="(min-width: 768px) and (max-width: 991px)" srcset="logo-tablet.jpg">
-                    
-                    versiones de la imagen:
+            <nav class="Header-nav">
+                <div class="Header-items">
 
-                    Original: 500x310 px (para desktop)
-                    Tablet: Reducir el ancho, manteniendo la proporción (por ejemplo, 350x219 px)
-                    Móvil: Reducir aún más el ancho (por ejemplo, 250x156 px)-->
+                    <!--Logo-->
+                    <a href="index.html" class="Header-logo" title="Inicio">
+                        <picture>
+                            <img src="./img/RLogoClaro.png" type="image/png" alt="Logo reducido Riava Designs">
+                        </picture>
+                    </a>
 
-                    <img src="./img/RLogoClaro.png" type="image/png" alt="Logo reducido Riava Designs">
-                </picture>
-            </div>
+                    <!--Icono para móvil abrir/cerrar-->
+                    <button class="Header-boton">
+                        <span class="material-symbols-outlined">dehaze</span>
+                    </button>
+
+                    <!--Secciones del menú-->
+                    <ul class="Header-secciones">
+                        <li><a href="ilustraciones.html" class="Header-enlace ">Ilustraciones</a></li>
+                        <li><a href="sobremi.html">Sobre mi</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
+
 
         <!--Sección Banner principal-->
         <main class="Main">
@@ -53,73 +60,86 @@
             </section>
         </main>
 
-        <!--Sección About me-->
+        <!--Sección About me
         <section class="About">
-            <div class="About-header">about me about me about me about me about me about me </div>
-
             <div class="About-elements">
 
                 <div class="About txt">
                     <h2 class="About-title">Sobre mi</h2>
-                    <p class="About-text">Hola! Soy Luján, vengo de Argentina ⁂ y vivo en Valencia hace ya dos años. Apasionada de todo lo visual, desde el arte, ilustraciones, diseños, creaciones, la fotografía y más.
+                    <p class="About-text">Hola! Soy Luján, vengo de Argentina ⁂ y vivo en Valencia hace ya dos años.
+                        Apasionada de todo lo visual, desde el arte, ilustraciones, diseños, creaciones, la fotografía y
+                        más.
 
-                        Soy lo que se puede decir super detallista y observadora, me encanta todo lo que tenga que ver con la creatividad y personalidad de artistas gráficos/ilustradores, y a eso aspiro.
-                        
+                        Soy lo que se puede decir super detallista y observadora, me encanta todo lo que tenga que ver
+                        con la creatividad y personalidad de artistas gráficos/ilustradores, y a eso aspiro.
+
                         Diseño, dibujo, simplifico y le meto onda. ✹</p>
                 </div>
 
                 <picture>
                     <source srcset="about-me.png" type="imagen">
-                    <img src="./img/about-img-08.png" type="image/png" alt="Foto de la autora" class="About-img" loading="lazy">
+                    <img src="./img/about-img-08.png" type="image/png" alt="Foto de la autora" class="About-img"
+                        loading="lazy">
                 </picture>
             </div>
-        </section>
+        </section>-->
 
-        <!--Sección Slider-->
+
+
+
+<!--
+            Sección Slider
         <section class="Projects">
             <h2 class="Projects-title">Proyectos</h2>
             <div class="Slider">
                 <div class="Slider-img">
                     <picture>
                         <source srcset="Slider-img1" type="image">
-                        <img src="./img/Slider-img1.png" type="image/png" alt="Proyecto redes" class="img" loading="lazy">
+                        <img src="./img/Slider-img1.png" type="image/png" alt="Proyecto redes" class="img"
+                            loading="lazy">
                     </picture>
                 </div>
 
                 <div class="Slider-img">
                     <picture>
                         <source srcset="Slider-img2" type="image">
-                        <img src="./img/Slider-img2.png" type="image/png" alt="Proyecto revista" class="img" loading="lazy">
+                        <img src="./img/Slider-img2.png" type="image/png" alt="Proyecto revista" class="img"
+                            loading="lazy">
                     </picture>
                 </div>
 
                 <div class="Slider-img">
                     <picture>
                         <source srcset="Slider-img3" type="image">
-                        <img src="./img/Slider-img3.png" type="image/png" alt="Proyecto catálogo" class="img" loading="lazy">
+                        <img src="./img/Slider-img3.png" type="image/png" alt="Proyecto catálogo" class="img"
+                            loading="lazy">
                     </picture>
                 </div>
 
                 <div class="Slider-img">
                     <picture>
                         <source srcset="Slider-img4" type="image">
-                        <img src="./img/Slider-img4.png" type="image/png" alt="Proyecto infografía" class="img" loading="lazy">
+                        <img src="./img/Slider-img4.png" type="image/png" alt="Proyecto infografía" class="img"
+                            loading="lazy">
                     </picture>
                 </div>
 
                 <div class="Slider-img">
                     <picture>
                         <source srcset="Slider-img5" type="image">
-                        <img src="./img/Slider-img5.png" type="image/png" alt="Proyecto Branding" class="img" loading="lazy">
+                        <img src="./img/Slider-img5.png" type="image/png" alt="Proyecto Branding" class="img"
+                            loading="lazy">
                     </picture>
                 </div>
             </div>
-        </section>
+        </section>    
+-->
+
+
+
 
         <!--Sección Contacto-->
         <section class="Form">
-            <div class="Form-header">contact contact contact contact contact contact contact</div>
-
             <p class="Form-subtitle">Contacta conmigo</p>
 
             <form action="/index.html" method="get" class="Contact-form">
@@ -137,21 +157,36 @@
 
 
 
+
+
+
+
+
+
+
+
         <!--Sección Footer-->
         <footer class="Footer">
+            <!--Logo footer-->
             <div class="Footer-logo-wrapper">
                 <picture>
                     <source srcset="LogoFooter" type="png">
                     <img src="./img/LogoFooter.png" type="image/png" alt="Logo Footer" class="Logo-img" loading="lazy">
                 </picture>
             </div>
+
+            <div class="Footer-links">
+                <a href="ilustraciones.html" class="Footer-link">Ilustraciones</a>
+                <a href="sobremi.html" class="Footer-link">Sobre mi</a>
+                <a href="contacto.html" class="Footer-link">Contacto</a>
+            </div>
+
             <p class="Footer-credits">RIAVA DESIGNS © illustrations 2025. All rights reserved.</p>
         </footer>
 
     </div>
 
-    <!--Script del html-->
-    <script defer src="./js/index.js"></script>
+
 </body>
 
 </html>
