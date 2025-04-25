@@ -25,67 +25,108 @@ H1 {
     padding-top: 1rem;
 }
 
-/*Sección About me*/
-.About {
-    flex-wrap: wrap;
+/*        Sección Ilustraciones        */
+
+.Creaciones {
     background-color: #F94E83;
-    padding-bottom: 5rem;
-    padding-top: 3rem;
+    text-align: center;
+    padding: 40px 20px;
+    padding-bottom: 10rem;
 }
 
-.About-type {
-    font-size: 5rem;
-    font-family: 'PinyonScript-Regular';
+/*   Título principal de la sección   */
+.Ilustraciones-title {
     color: #FCECEC;
-    animation: marquee 10s linear infinite;
-    overflow: hidden;
-    white-space: nowrap;
+    font-size: 2.8rem;
+    font-family: 'DelaGothicOne-Regular';
 }
 
-@keyframes About-type {
-    form {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-
-.About-txt {
-    display: block;
-    width: 20%;
-}
-
-.About-elements {
+/*    Ilustraciones Grid   */
+.Creaciones-grid {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-right: 5rem;
+    gap: 4rem;
+    margin-bottom: 6rem;
     padding-left: 5rem;
+    flex-wrap: wrap;
 }
 
+/*   Responsive   */
+@media (max-widh: 768px) {
+    .Creaciones-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
-.About-title {
-    font-family: 'DelaGothicOne-Regular', sans-serif;
+/*  Subtítulos  */
+.Creacion-header {
+    background-color: #0E1E03;
     color: #FCECEC;
-    font-size: 2rem;
-}
-
-.About-p {
+    padding: 8px 0;
     font-family: 'Outfit-Regular';
-    color: #FCECEC;
     font-size: 1.5rem;
-   
+    margin-top: 5rem;
 }
 
-.About-img {
-    max-width: 400px;
+/*    Link en la imagen    */
+.Creacion-link {
+    text-decoration: none;
+    /*AÑADIR QUE SE EXPANDA O QUE TENGA SOMBRA PARA DARLE PODER AL LINK*/
+}
+
+/* Contenedor de la imagen */
+.Creacion-img-container {
+    width: 100%;
+}
+
+.Creacion-img {
+    width: 100%;
     height: auto;
+    display: block; /*HIXO QUE QUE ACHIQUE NO SE QUE PONDA UNO DEBAJO DEL OTRO*/
+}
+
+/*------------------------*/
+
+
+/*    Última parte    */
+.Subtitulo {
+    color: #0E1E03;
+    font-family: 'DelaGothicOne-Regular';
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }
 
 
-/*Slider proyectos*/
+.Texto-trabajos {
+    color: #FCECEC;
+    font-family: 'Outfit-Regular';
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+
+.Trabajos-boton {
+    text-decoration: none;
+    background-color: #F4971C;
+    border: 0.5rem solid #0E1E03;
+    color: #0E1E03;
+    padding: 0.5rem 7rem;
+    cursor: pointer;
+    font-family: 'Outfit-Regular';
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto hover en botón */
+.Trabajos-boton:hover {
+    background-color: #FCECEC;
+    color: #F94E83;
+}
+
+
+
+/*Slider proyectos
 .Projects {
     background-color: #FCECEC;
     height: fit-content;
@@ -113,7 +154,7 @@ H1 {
     width: auto;
 }
 
-
+*/
 
 
 

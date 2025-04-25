@@ -40,7 +40,8 @@
 
                     <!--Secciones del menú-->
                     <ul class="Header-secciones">
-                        <li><a href="ilustraciones.html" class="Header-enlace" title="Ilustraciones">Ilustraciones</a></li>
+                        <li><a href="index.html#Seccion-creaciones" class="Header-enlace"
+                                title="Ilustraciones">Ilustraciones</a></li>
                         <li><a href="sobremi.html" title="Sobre mi">Sobre mi</a></li>
                         <li><a href="contacto.html" title="Contacto">Contacto</a></li>
                     </ul>
@@ -61,34 +62,77 @@
         </main>
 
 
+        <!--Sección Ilustraciones-->
+        <section class="Creaciones" id="Seccion-creaciones">
+            <!--Título-->
+            <h2 class="Ilustraciones-title">Creaciones</h2>
+
+            <div class="Creaciones-grid">
+                <!--Creación: Flowers-->
+                <article class="Creacion Creacion--flowers">
+
+                    <!--Subtítulo-->
+                    <div class="Creacion-header">Flowers</div>
+
+                    <a href="flowers.html" title="Ver ilustración Flowers" class="Creacion-link">
+                        <div class="Creacion-img-container">
+                            <picture>
+                                <source srcset="./img/flowers-portada.svg" type="image/svg">
+                                <img class="Creacion-img" src="./img/flowers-portada.svg" alt="Ilustración Flowers"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                    </a>
+
+                </article>
+
+
+                <!--Creación: Butterfly-->
+                <article class="Creacion Creacion--butterfly">
+
+                    <!--Subtítulo-->
+                    <div class="Creacion-header">Butterfly</div>
+
+                    <a href="butterfly.html" title="Ver ilustración Butterfly" class="Creacion-link">
+                        <div class="Creacion-img-container">
+                            <picture>
+                                <source srcset="./img/butterfly-portada.svg" type="image/svg">
+                                <img class="Creacion-img" src="./img/butterfly-portada.svg" alt="Ilustración Butterfly"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                    </a>
+                </article>
 
 
 
-        <!--Sección Contacto-->
-        <section class="Form">
-            <p class="Form-subtitle">Contacta conmigo</p>
+                <!--Creación: Planet-->
+                <article class="Creacion Creacion--planet">
 
-            <form action="/index.html" method="get" class="Contact-form">
+                    <!--Subtítulo-->
+                    <div class="Creacion-header">Planet</div>
 
-                <!--Parte datos-->
-                <input type="text" name="name" required placeholder="Nombre *">
-                <input type="email" name="email" placeholder="Correo *" required>
-                <textarea name="mensaje" maxlength="400" required placeholder="Escribí tu mensaje aquí..."></textarea>
+                    <a href="planet.html" title="Ver ilustración Planet" class="Creacion-link">
+                        <div class="Creacion-img-container">
+                            <picture>
+                                <source srcset="./img/planet-portada.svg" type="image/svg">
+                                <img class="Creacion-img" src="./img/planet-portada.svg" alt="Ilustración Planet"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                    </a>
+                </article>
+            </div>
 
-                <!--Botón para enviar-->
-                <input type="submit" value="Enviar" class="Form-btn">
-            </form>
+
+            <!--Sección Final-->
+            <div class="Link-contacto">
+                <h3 class="Subtitulo">Conoce mis trabajos</h3>
+                <p class="Texto-trabajos">lorem ipsum (algo para introducir que busquen mis proyectos de diseño)</p>
+
+                <a href="./contacto.html" class="Trabajos-boton" title="Ir a Contacto">Links</a>
+            </div>
         </section>
-
-
-
-
-
-
-
-
-
-
 
 
         <!--Sección Footer-->
