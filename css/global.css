@@ -118,7 +118,8 @@ Pop y pequeños detalles: #F4971C
 
 /*   Color en hover   */
 .Header-secciones a:hover,
-.Header-enlace:focus {
+.Header-enlace:focus,
+.active {
     color: #F94E83;
 }
 /*
