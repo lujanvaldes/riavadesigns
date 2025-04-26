@@ -9,10 +9,10 @@
     font-family: 'PinyonScript-Regular';
     color: #FCECEC;
     font-size: 3rem;
-    
+
 }
 
-H1 {
+h1 {
     font-family: 'DelaGothicOne-Regular', sans-serif;
     color: #F94E83;
     font-size: 4rem;
@@ -38,8 +38,9 @@ H1 {
 /*   Título principal de la sección   */
 .Creaciones-title {
     color: #FCECEC;
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-family: 'DelaGothicOne-Regular';
+    letter-spacing: 0.1rem;
     margin-bottom: 3rem;
 }
 
@@ -54,14 +55,13 @@ H1 {
     cursor: pointer;
 }
 
-/* Efecto hover sobre las ilustraciones*/
+/* Efecto hover sobre las ilustraciones | aumento de tamaño*/
 .Creacion--cards:hover {
-        transform: translate(-8px); /*elevación*/
-        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /*sombra*/
-
+    transform: scale(1.05);
+    transition: 0.3s ease;
 }
 
-/*   Responsive   */
+/*   Responsive grid  */
 @media (max-width: 768px) {
     .Creaciones-grid {
         flex-direction: column;
@@ -78,10 +78,10 @@ H1 {
     font-size: 1.5rem;
 }
 
+
 /*    Link en la imagen    */
 .Creacion-link {
     text-decoration: none;
-    /*AÑADIR QUE SE EXPANDA O QUE TENGA SOMBRA PARA DARLE PODER AL LINK*/
 }
 
 .Creacion-link:hover {
@@ -97,8 +97,8 @@ H1 {
 .Creacion-img {
     width: 100%;
     height: auto;
-    display: block; /*HIXO QUE QUE ACHIQUE NO SE QUE PONDA UNO DEBAJO DEL OTRO*/
-}
+    display: block;
+    }
 
 /*------------------------*/
 
@@ -107,7 +107,7 @@ H1 {
 .Subtitulo {
     color: #0E1E03;
     font-family: 'DelaGothicOne-Regular';
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 3rem;
 }
 
@@ -115,9 +115,9 @@ H1 {
 .Texto-trabajos {
     color: #FCECEC;
     font-family: 'Outfit-Regular';
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 3rem;
-    padding: 2rem;
+    padding: 1rem 7rem 1rem 7rem;
 }
 
 .Trabajos-boton {
@@ -139,51 +139,49 @@ H1 {
     color: #F94E83;
 }
 
+/* Responsive */
+/*   Tablet   */
+@media (max-width: 1024px) {
+    .Texto-trabajos {
+        padding: 1rem 4rem;
+    }
 
-
-/*Slider proyectos
-.Projects {
-    background-color: #FCECEC;
-    height: fit-content;
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 5rem;
+    .Trabajos-boton {
+        padding: 0.5rem 4rem;
+    }
 }
 
-.Projects-title {
-    font-family: 'DelaGothicOne-Regular', sans-serif;
-    color: #0E1E03;
-    font-size: 3rem;
-    padding: 2rem;
-    align-self: center;
+/*   Móvil   */
+@media (max-width: 768px) {
+    .Texto-trabajos {
+        padding: 1rem 2rem;
+    }
+
+    .Trabajos-boton {
+        padding: 0.5rem 2rem;
+    }
+
+    .Banner-subt {
+        font-size: 2.2rem;
+    }
+
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .Banner-h2 {
+        font-size: 1.5rem;
+    }
+
+    .Subtitulo {
+        font-size: 1.5rem;
+    }
+
+    .Texto-trabajos {
+        font-size: 1rem;
+    }
+
+    .Trabajos-boton {
+        font-size: 1.2rem;
+    }
 }
-
-.Slider {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-
-.img {
-    height: 400px;
-    width: auto;
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
