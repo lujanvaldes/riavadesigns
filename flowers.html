@@ -12,7 +12,7 @@
     <title>Ilustraciones | Flowers</title>
 
     <link rel="stylesheet" href="./css/global.css">
-        <link rel="stylesheet" href="./css/flowers.css">
+    <link rel="stylesheet" href="./css/flowers.css">
 
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -39,7 +39,7 @@
 
                     <!--Secciones del menú-->
                     <ul class="Header-secciones">
-                        <li><a href="ilustraciones.html" class="Header-enlace" title="Ilustraciones">Ilustraciones</a>
+                        <li><a href="index.html#Seccion-creaciones" class="Header-enlace" title="Ilustraciones">Ilustraciones</a>
                         </li>
                         <li><a href="sobremi.html" title="Sobre mi">Sobre mi</a></li>
                         <li><a href="contacto.html" title="Contacto">Contacto</a></li>
@@ -55,6 +55,62 @@
 
 
 
+ <!--Título-->
+ <section class="Flowers">
+    <div class="Flowers-content">
+        <h1 class="Flowers-title">Flowers</h1>
+
+        <!--Acordeón-->
+        <div class="Acordeon">
+            <!--Acordeón Procreate-->
+            <div class="Acordeon-bloque">
+                <div class="Acordeon-boton Acento" id="Acordeon-btn">
+                    <h3 class="Flowers-subtitle">Procreate</h3>
+                    <span class="material-symbols-outlined Acordeon-icon" id="acordeon-icon">add</span>
+                </div>
+                <div class="Acordeon-content">La ilustración fue realizada en Procreate utilizando un único tipo de pincel, lo que permitió mantener una coherencia en el estilo y uniformidad en la línea a lo largo de todo el trabajo.
+                </div>
+            </div>
+
+            <!--Acordeón Photoshop-->
+            <div class="Acordeon-bloque">
+                <div class="Acordeon-boton Acento" id="Acordeon-btn">
+                    <h3 class="Flowers-subtitle">Photoshop</h3>
+                    <span class="material-symbols-outlined Acordeon-icon" id="acordeon-icon">add</span>
+                </div>
+                <div class="Acordeon-content">En Adobe Photoshop se realizaron ajustes finales aplicando curvas de color y diferentes modos de fusión. Estos recursos permitieron intensificar los tonos y sumar matices, otorgándole mayor profundidad y personalidad a la ilustración.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Flowers-thumbnails">
+            <picture>
+                <source srcset="./img/flowers-thumbnail-1.svg" type="image/svg">
+                <img src="./img/flowers-thumbnail-1.svg" alt="Detalle de ilustración flores"
+                    class="Flowers-thumb" loading="lazy">
+            </picture>
+
+            <picture>
+                <source srcset="./img/flowers-thumbnail-2.svg" type="image/svg">
+                <img src="./img/flowers-thumbnail-2.svg" alt="Detalle de ilustración flores"
+                    class="Flowers-thumb" loading="lazy">
+            </picture>
+        </div>
+
+    </div>
+
+
+    <!--Imagen principal grande-->
+    <div class="Flowers-img">
+        <picture>
+            <source srcset="./img/flowers-principal.svg" type="image/svg">
+            <img src="./img/flowers-principal.svg" alt="Ilustración principal de flores"
+                class="Flowers-main" loading="lazy">
+        </picture>
+    </div>
+
+</section>
 
 
 
@@ -63,20 +119,25 @@
             <!--Logo footer-->
             <div class="Footer-logo-wrapper">
                 <picture>
-                    <source srcset="LogoFooter" type="png">
+                    <source srcset="./img/planet-principal.svg" type="png">
                     <img src="./img/logo-footer.png" type="image/png" alt="Logo Footer" class="Logo-img" loading="lazy">
                 </picture>
             </div>
 
             <div class="Footer-links">
-                <a href="ilustraciones.html" class="Footer-link" title="Ilustraciones">Ilustraciones</a>
+                <a href="index.html#Seccion-creaciones" class="Footer-link" title="Ilustraciones">Ilustraciones</a>
                 <a href="sobremi.html" class="Footer-link" title="Sobre mi">Sobre mi</a>
                 <a href="contacto.html" class="Footer-link" title="Contacto">Contacto</a>
             </div>
 
             <p class="Footer-credits">RIAVA DESIGNS © illustrations 2025. All rights reserved.</p>
         </footer>
-
     </div>
+
+
+     <!--JavaScript Global-->
+    <script src="./js/global.js"></script> 
+     <!--JavaScript Específico-->
+     <script src="./js/flowers.js"></script>
 </body>
 </html>

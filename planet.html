@@ -38,7 +38,7 @@
 
                     <!--Secciones del menú-->
                     <ul class="Header-secciones">
-                        <li><a href="ilustraciones.html" class="Header-enlace" title="Ilustraciones">Ilustraciones</a>
+                        <li><a href="index.html#Seccion-creaciones" class="Header-enlace" title="Ilustraciones">Ilustraciones</a>
                         </li>
                         <li><a href="sobremi.html" title="Sobre mi">Sobre mi</a></li>
                         <li><a href="contacto.html" title="Contacto">Contacto</a></li>
@@ -53,6 +53,66 @@
 
 
 
+        <!--Título-->
+        <section class="Planet">
+            <div class="Planet-content">
+                <h1 class="Planet-title">Planet</h1>
+
+                <!--Acordeón-->
+                <div class="Acordeon">
+                    <!--Acordeón Procreate-->
+                    <div class="Acordeon-bloque">
+                        <div class="Acordeon-boton Acento" id="Acordeon-btn">
+                            <h3 class="Planet-subtitle">Procreate</h3>
+                            <span class="material-symbols-outlined Acordeon-icon" id="acordeon-icon">add</span>
+                        </div>
+                        <div class="Acordeon-content">La ilustración fue realizada en Procreate implementando varios tipos de pinceles, lo que permitió trabajar diferentes texturas y matices dentro de la composición. Se utilizó una paleta cromática más amplia para enriquecer la propuesta visual y se aplicaron detalles de luz en zonas específicas para acentuar la profundidad y el volumen de la imagen.
+                        </div>
+                    </div>
+
+                    <!--Acordeón Illustrator-->
+                    <div class="Acordeon-bloque">
+                        <div class="Acordeon-boton Acento" id="Acordeon-btn">
+                            <h3 class="Planet-subtitle">Illustrator</h3>
+                            <span class="material-symbols-outlined Acordeon-icon" id="acordeon-icon">add</span>
+                        </div>
+                        <div class="Acordeon-content">En Adobe Illustrator se realizaron retoques utilizando la herramienta pluma, corrigiendo y unificando trazos en áreas puntuales donde se requería mayor precisión y continuidad en las líneas.
+                        </div>
+                    </div>
+                </div>
+
+    
+                <div class="Planet-thumbnails">
+                    <picture>
+                        <source srcset="./img/planet-thumbnail-1.svg" type="image/svg">
+                        <img src="./img/planet-thumbnail-1.svg" alt="Detalle de ilustración planeta"
+                            class="Planet-thumb" loading="lazy">
+                    </picture>
+
+                    <picture>
+                        <source srcset="./img/planet-thumbnail-2.svg" type="image/svg">
+                        <img src="./img/planet-thumbnail-2.svg" alt="Detalle de ilustración planeta"
+                            class="Planet-thumb" loading="lazy">
+                    </picture>
+                </div>
+
+            </div>
+
+
+            <!--Imagen principal grande-->
+            <div class="Planet-img">
+                <picture>
+                    <source srcset="./img/planet-principal.svg" type="image/svg">
+                    <img src="./img/planet-principal.svg" alt="Ilustración principal de mariposa"
+                        class="Planet-main" loading="lazy">
+                </picture>
+            </div>
+
+        </section>
+
+
+
+
 
 
 
@@ -62,13 +122,13 @@
             <!--Logo footer-->
             <div class="Footer-logo-wrapper">
                 <picture>
-                    <source srcset="LogoFooter" type="png">
+                    <source srcset="./img/logo-footer.png" type="png">
                     <img src="./img/logo-footer.png" type="image/png" alt="Logo Footer" class="Logo-img" loading="lazy">
                 </picture>
             </div>
 
             <div class="Footer-links">
-                <a href="ilustraciones.html" class="Footer-link" title="Ilustraciones">Ilustraciones</a>
+                <a href="index.html#Seccion-creaciones" class="Footer-link" title="Ilustraciones">Ilustraciones</a>
                 <a href="sobremi.html" class="Footer-link" title="Sobre mi">Sobre mi</a>
                 <a href="contacto.html" class="Footer-link" title="Contacto">Contacto</a>
             </div>
@@ -77,5 +137,12 @@
         </footer>
 
     </div>
+
+<!--JavaScript Global-->
+<script src="./js/global.js"></script>
+<!--JavaScript Específico-->
+<script src="./js/planet.js"></script>
+
+
 </body>
 </html>

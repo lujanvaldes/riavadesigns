@@ -56,7 +56,9 @@ Pop y pequeños detalles: #F4971C
     box-sizing: border-box;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 /*                    Header/Menú                   */
 

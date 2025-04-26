@@ -34,7 +34,8 @@
 
                     <!--Secciones del menú-->
                     <ul class="Header-secciones">
-                        <li><a href="ilustraciones.html" class="Header-enlace" title="Ilustraciones">Ilustraciones</a>
+                        <li><a href="index.html#Seccion-creaciones" class="Header-enlace"
+                                title="Ilustraciones">Ilustraciones</a>
                         </li>
                         <li><a href="sobremi.html" title="Sobre mi">Sobre mi</a></li>
                         <li><a href="contacto.html" title="Contacto">Contacto</a></li>
@@ -44,62 +45,90 @@
         </header>
 
 
-        <!--Sección título principal-->
+        <!--Principal-->
         <main class="Main">
+
+            <!--Sección contacto-->
             <section class="Contact">
-                <h1 class="Contact-title">Contacta conmigo</h1>
-                <div class="Contact-links">
-                    <!--link Instagram-->
-                    <a href="https://www.instagram.com/riavadesigns/?igsh=MTMyemVpOWIwd29vdg%3D%3D#" target="_blank"
-                        class="Contact-link">Instagram</a>
-                    <!--link Web-->
-                    <a href="https://www.riavadesigns.com/" target="_blank" class="Contact-link">Mi Web</a>
-                    <!--link LinkedIn-->
-                    <a href="#" target="_blank" class="Contact-link">LinkedIn</a>
+                <div class="Contact-container">
+
+                    <!--Información de contacto-->
+                    <div class="Contact-info">
+                        <h2 class="Contact-title">Contacta conmigo</h2>
+                        <ul class="Contact-list">
+                            <li class="Contact-item">
+                                <strong class="Contact-itemTitle">Correo de contacto:</strong>
+                                <p class="Contact-itemText">riavadesigns@gmail.com</p>
+                            </li>
+
+                            <li class="Contact-item">
+                                <a href="https://www.instagram.com/riavadesigns/?igsh=MTMyemVpOWIwd29vdg%3D%3D#"
+                                    target="_blank" class="Contact-link">Instagram</a>
+                            </li>
+
+                            <li class="Contact-item">
+                                <a href="https://www.riavadesigns.com/" target="_blank" class="Contact-link">Web</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="Contact-formContainer">
+                        <h3 class="Contact-formTitle">Deja tus datos y te contacto lo antes posible</h3>
+                        
+                        <!--Formulario de contacto-->
+                        <!--<section class="Form">-->
+
+                            <form action="/contacto.html" method="get" class="Contact-form">
+
+                                <!--Campo nombre-->
+                                <input type="text" name="name" required placeholder="Nombre *"
+                                    title="Ingresar nombre completo" class="Contact-input">
+
+                                <!--Campo correo electrónico-->
+                                <input type="email" name="email" placeholder="Correo *"
+                                    title="Añadir tu dirección de correo electrónico" class="Contact-input" required>
+                                
+                                <!--Campo mensaje-->
+                                <textarea name="mensaje" maxlength="400"
+                                    title="Escribe tu mensajr (max. 400 caracteres)" required
+                                    placeholder="Escribí tu mensaje aquí..." class="Contact-textarea"></textarea>
+
+                                <!--Botón para enviar-->
+                                <input type="submit" value="Enviar" class="Form-btn">
+
+                            </form>
+                        <!--</section>-->
+                    </div>
                 </div>
             </section>
         </main>
-
-
-        <!--Formulario de contacto-->
-        <section class="Form">
-
-            <form action="/contacto.html" method="get" class="Contact-form">
-
-                <!--Parte datos-->
-                <input type="text" name="name" required placeholder="Nombre *" title="Ingresar nombre completo">
-                <input type="email" name="email" placeholder="Correo *"
-                    title="Añadir tu dirección de correo electrónico" required>
-                <textarea name="mensaje" maxlength="600" title="Escribe tu mensajr (max. 600 caracteres)" required
-                    placeholder="Escribí tu mensaje aquí..."></textarea>
-
-                <!--Botón para enviar-->
-                <input type="submit" value="Enviar" class="Form-btn">
-            </form>
-
-        </section>
-
-        <!--Sección Footer-->
-        <footer class="Footer">
-            <!--Logo footer-->
-            <div class="Footer-logo-wrapper">
-                <picture>
-                    <source srcset="LogoFooter" type="png">
-                    <img src="./img/logo-footer.png" type="image/png" alt="Logo Footer" class="Logo-img" loading="lazy">
-                </picture>
-            </div>
-
-            <div class="Footer-links">
-                <a href="ilustraciones.html" class="Footer-link" title="Ilustraciones">Ilustraciones</a>
-                <a href="sobremi.html" class="Footer-link" title="Sobre mi">Sobre mi</a>
-                <a href="contacto.html" class="Footer-link" title="Contacto">Contacto</a>
-            </div>
-
-            <p class="Footer-credits">RIAVA DESIGNS © illustrations 2025. All rights reserved.</p>
-        </footer>
-
-
     </div>
+
+
+    <!--Sección Footer-->
+    <footer class="Footer">
+        <!--Logo footer-->
+        <div class="Footer-logo-wrapper">
+            <picture>
+                <source srcset="./img/planet-principal.svg" type="png">
+                <img src="./img/logo-footer.png" type="image/png" alt="Logo Footer" class="Logo-img" loading="lazy">
+            </picture>
+        </div>
+
+        <div class="Footer-links">
+            <a href="index.html#Seccion-creaciones" class="Footer-link" title="Ilustraciones">Ilustraciones</a>
+            <a href="sobremi.html" class="Footer-link" title="Sobre mi">Sobre mi</a>
+            <a href="contacto.html" class="Footer-link" title="Contacto">Contacto</a>
+        </div>
+
+        <p class="Footer-credits">RIAVA DESIGNS © illustrations 2025. All rights reserved.</p>
+    </footer>
+    </div>
+
+    <!--JavaScript Global-->
+    <script src="./js/global.js"></script>
 </body>
 
 </html>
