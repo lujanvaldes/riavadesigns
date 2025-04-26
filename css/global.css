@@ -102,6 +102,8 @@ Pop y pequeños detalles: #F4971C
 .Header-secciones {
     list-style: none;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     gap: 5rem;
     margin: 0;
     padding: 0;
@@ -122,42 +124,11 @@ Pop y pequeños detalles: #F4971C
 .active {
     color: #F94E83;
 }
-/*
-/* Parte responsive del menu 
-media (max-width: 768px) {*/
-    /*para que muestre el menú en móvil
-    .Header-boton {
-        display: block;
-        border: none;
-        font-size: 2rem;
-        color: #0E1E03;
-        position: relative;
-    }
-}
 
-.Header-secciones {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #FCECEC;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 3rem;
-}
-
+/* estilo para el menú móvil/tablets */
 .Header-secciones.activo {
     display: flex;
 }
-*/
-/*  Botón cerrar menú móvil
-.Header-secciones.activo .Header-boton {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-}
-*/
-
 
 
 
@@ -170,9 +141,8 @@ media (max-width: 768px) {*/
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-bottom: 1rem;
     width: 100%;
-    height: 30vh;
+    height: 40vh;
 }
 
 /*          BORRAR  Footer           
@@ -222,10 +192,298 @@ media (max-width: 768px) {*/
     color: #FCECEC;
 }
 
-/*  Responsive menú móvil  */
-@media (max-width: 768px) {
+
+
+/*-----------------  Media Queries  -----------------*/
+
+
+/*________________________ Móvil ________________________*/
+/* tamaños 768px o menos */
+/* para pantallas pequeñas (móvil y tabletas en vertical) */
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    :root {
+        /* ajustes generales de tipografía para móvil */
+        --font-size-parrafo: 1rem;
+        --font-size-menu: 1.1rem;
+        --letter-spacing: 0.5rem;
+    }
+
+    /*--------- header ---------*/
+    .Header {
+        height: 80px;
+        padding: 0.8rem;
+        ;
+    }
+
+    .Header-nav {
+        padding: 0.5rem;
+        ;
+    }
+
+    .Header-items {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    /* achicar logo */
+    .Header-boton {
+        display: block;
+    }
+
+    /* ocultar menú que se desplegará luego con el menú hamburguesa*/
+    .Header-secciones {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        background-color: #F4971C;
+        color: #0E1E03;
+        /*width: 100%; RECOMENDADO POR CGT*/
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        /*estos dos anteriores recomendado por otro*/
+        margin-top: 0;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Outfit-Regular';
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Header-secciones.activo {
+        display: flex;
+    }
+
+    /* boton de cerrar en menú movil */
+    .Menu-cerrar {
+        position: absolute;
+        top: 1.5rem;
+    }
+
+    /*--------- footer ---------*/
+    .Footer {
+        height: auto;
+        /*para que crezca según el contenido que tenga*/
+        padding: 2rem 1rem;
+    }
+
     .Footer-links {
         flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .Logo-img {
+        height: 120px;
+    }
+
+    .Footer-credits {
+        font-size: 0.7rem;
+        margin-top: 1rem;
+    }
+
+    /*.Header-nav {
+        padding: 0.5rem 1rem;
+    }
+
+    .Header-items {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .Header-secciones {
+        gap: 2rem;
+    }
+
+    .Header-boton {
+        display: block;
+        border: none;
+        font-size: 2rem;
+        color: #F4971C;
+        position: relative;
+    }
+
+    .Header-secciones {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #FCECEC;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 3rem;
+    }
+
+    .Header-secciones.activo {
+        display: flex;*/
+}
+
+/*________________________ Tablets ________________________*/
+/* tamaños 1024px hasta 768px */
+/* para pantallas pequeñas (móvil y tabletas en vertical) */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    :root {
+        /* ajustes generales de tipografías para tablets */
+        --font-size-parrafo: 1.2rem;
+        --font-size-menu: 1.3rem;
+        --letter-spacing: 0.6rem;
+    }
+
+    /*--------- header ---------*/
+    .Header {
+        height: 90px;
+        padding: 1rem 2rem;
+    }
+
+    .Header-nav {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .Header-items {
+        justify-content: space-between;
+    }
+
+    .Header-logo img {
+        height: 50px;
+    }
+
+    .Header-boton {
+        display: block;
+    }
+
+    .Header-secciones {
+        display: none;
+        flex-direction: column;
+        gap: 2.5rem;
+        background-color: #F4971C;
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: var(--font-size-menu);
+    }
+
+    /*--------- footer ---------*/
+    .Footer {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .Footer-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .Logo-img {
+        height: 130px
+    }
+
+    .Footer-credits {
+        font-size: 0.8rem;
+    }
+}
+
+
+/*________________________ Desktop ________________________*/
+/* tamaños 1024px o más */
+/* para computadoras de escritorio y portátiles */
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    :root {
+        /*ajustes generales de tipografía para desktop*/
+        --font-size-parrafo: 1.2rem;
+        --font-size-menu: 1.3rem;
+        --letter-spacing: 0.7rem;
+    }
+
+    /*--------- header ---------*/
+    .Header {
+        height: 100px;
+        padding: 1.5rem 3rem;
+    }
+
+    .Header-items {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    /* para ocultar el icono del menú hamburguesa en el desktop */
+    .Header-boton {
+        display: none;
+    }
+
+    .Header-secciones {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        font-size: var(--font-size-menu);
+    }
+
+    /*--------- footer ---------*/
+    .Footer {
+        height: auto;
+        padding: 3rem 2rem;
+    }
+
+    .Footer-links {
+        flex-direction: row;
+        gap: 6rem;
+    }
+
+    .Logo-img {
+        height: 150px;
+    }
+
+    .Footer-credits {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*________________________ Desktop grandes ________________________*/
+@media (min-width: 1441px) {
+    :root {
+        /*ajustes generales de tipografía para desktop grandes*/
+        --font-size-parrafo: 1.25rem;
+        --font-size-menu: 1.4rem;
+        --letter-spacing: 0.8rem;
+    }
+
+    /*--------- header ---------*/
+    .Header {
+        height: 120px;
+        padding: 2rem 4rem;
+        ;
+    }
+
+    .Header-items {
+        justify-content: center;
+        gap: 8rem;
+    }
+
+    .Header-secciones {
+        font-size: var(--font-size-menu);
+        gap: 6rem;
+    }
+
+    /*--------- footer ---------*/
+    .Footer {
+        height: auto;
+        padding: 4rem 2rem;
+    }
+
+    .Footer-links {
+        gap: 8rem;
+    }
+
+    .Logo-img {
+        height: 160px;
+    }
+
+    .Footer-credits {
+        font-size: 1rem;
     }
 }
 
@@ -242,3 +500,43 @@ media (max-width: 768px) {*/
 
 
 
+
+
+
+
+
+/*
+/* Parte responsive del menu 
+media (max-width: 768px) {*/
+/*para que muestre el menú en móvil
+    .Header-boton {
+        display: block;
+        border: none;
+        font-size: 2rem;
+        color: #0E1E03;
+        position: relative;
+    }
+}
+
+.Header-secciones {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FCECEC;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 3rem;
+}
+
+.Header-secciones.activo {
+    display: flex;
+}
+*/
+/*  Botón cerrar menú móvil
+.Header-secciones.activo .Header-boton {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+*/

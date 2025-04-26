@@ -92,3 +92,36 @@
 -->
 
                     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            THUMBNAIL MODIFICADO
+                        <!--Thumbnail 1
+                <div class="Butterfly-thumbnails">
+                    <picture>
+                        <source srcset="./img/butterfly-thumbnail-1.svg" type="image/svg">
+                        <img src="./img/butterfly-thumbnail-1.svg" alt="Detalle de ilustración mariposa"
+                            class="Butterfly-thumb" loading="lazy">
+                    </picture>
+                </div>
+
+                Thumbnail 2
+                <div class="Butterfly-thumbnails">
+                    <picture>
+                        <source srcset="./img/butterfly-thumbnail-2.svg" type="image/svg">
+                        <img src="./img/butterfly-thumbnail-2.svg" alt="Detalle de ilustración mariposa"
+                            class="Butterfly-thumb" loading="lazy">
+                    </picture>
+                </div>-->
