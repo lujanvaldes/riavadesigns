@@ -29,9 +29,9 @@ h1 {
 
 .Creaciones {
     background-color: #F94E83;
-    text-align: center;
+    text-align: center;/*
     padding: 40px 20px;
-    padding-bottom: 10rem;
+    padding-bottom: 10rem;*/
 }
 
 
@@ -42,6 +42,7 @@ h1 {
     font-family: 'DelaGothicOne-Regular';
     letter-spacing: 0.1rem;
     margin-bottom: 3rem;
+    padding-top: 1rem;
 }
 
 /*    Ilustraciones Grid   */
@@ -108,7 +109,6 @@ h1 {
     color: #0E1E03;
     font-family: 'DelaGothicOne-Regular';
     font-size: 1.7rem;
-    margin-bottom: 3rem;
 }
 
 
@@ -139,9 +139,47 @@ h1 {
     color: #F94E83;
 }
 
+.Link-contacto {
+    padding: 1rem 2rem 6rem 2rem;
+}
+
+.Link-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.Link-textContainer {
+    flex: 1 1 400px;
+    color: #0E1E03;
+}
+
+/* imagen sección final */
+.Link-imgContainer {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+/* imagen adaptativa */
+.Link-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 /* Responsive */
 /*   Tablet   */
 @media (max-width: 1024px) {
+    .Creaciones-title {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
     .Texto-trabajos {
         padding: 1rem 4rem;
     }
@@ -153,6 +191,7 @@ h1 {
 
 /*   Móvil   */
 @media (max-width: 768px) {
+
     .Texto-trabajos {
         padding: 1rem 2rem;
     }
@@ -179,9 +218,21 @@ h1 {
 
     .Texto-trabajos {
         font-size: 1rem;
+        padding: 1rem 2rem;
     }
 
     .Trabajos-boton {
+        padding: 0.5rem 2rem;
         font-size: 1.2rem;
+    }
+
+    .Link-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Link-textContainer {
+        text-align: center;
+        padding: 0 1rem;
     }
 }
