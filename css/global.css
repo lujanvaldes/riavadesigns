@@ -98,6 +98,22 @@ html {
     font-size: 2rem;
     cursor: pointer;
     color: #F4971C;
+    position: relative; /*para que el  z-index que se añade abajo funcione correctamente*/
+    z-index: 1000; /*para que el botón quede por arriba del menú cuando se despliega, de otra forma, aparece por debajo */
+}
+
+/* estilo para que los íconos de abrir y cerrar el menú en móvil y tablet se vean */
+#icono-menu {
+    color: #FCECEC;
+    font-size: 2rem;
+}
+
+.Header-boton.activo {
+    position: fixed; /* posicionandolo con respecto a la ventana*/
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1100;
+    color: #FCECEC;
 }
 
 /*   Secciones del menú   */
@@ -128,9 +144,20 @@ html {
 }
 
 /* estilo para el menú móvil/tablets */
-.Header-secciones.activo {
+.Header-secciones.isActive {
     display: flex;
 }
+
+/*--------------------------------------------------------*/
+/* estilos cuando el menú está activo*/
+.Header-secciones.isActive {
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
+    animation: fadeIn 0.3s ease forwards;
+}
+/*--------------------------------------------------------*/
+
 
 
 
@@ -147,14 +174,6 @@ html {
     height: 40vh;
 }
 
-/*          BORRAR  Footer           
-.Footer {
-    display: block;
-    background-color: #0E1E03;
-    color: #FCECEC;
-    height: 30vh;
-    width: 100%;
-} */
 
 .Footer-logo {
     height: 50px;
@@ -221,7 +240,6 @@ html {
 
     .Header-nav {
         padding: 0.5rem;
-        ;
     }
 
     .Header-items {
@@ -240,11 +258,13 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        top: 0;
+        left: 0;
         gap: 3rem;
         background-color: #F4971C;
         color: #0E1E03;
-        /*width: 100%; RECOMENDADO POR CGT*/
-        width: 100vw;
+        /*width: 100%; RECOMENDADO POR CGT, YO LE PUSE VW*/
+        width: 100%;
         height: 100vh;
         z-index: 1000;
         /*estos dos anteriores recomendado por otro*/
@@ -253,9 +273,10 @@ html {
         font-size: 2rem;
         font-family: 'Outfit-Regular';
         transition: all 0.3s ease-in-out;
+        position: fixed;
     }
 
-    .Header-secciones.activo {
+    .Header-secciones.isActive {
         display: flex;
     }
 
@@ -286,40 +307,6 @@ html {
         margin-top: 1rem;
     }
 
-    /*.Header-nav {
-        padding: 0.5rem 1rem;
-    }
-
-    .Header-items {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .Header-secciones {
-        gap: 2rem;
-    }
-
-    .Header-boton {
-        display: block;
-        border: none;
-        font-size: 2rem;
-        color: #F4971C;
-        position: relative;
-    }
-
-    .Header-secciones {
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #FCECEC;
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        padding-top: 3rem;
-    }
-
-    .Header-secciones.activo {
-        display: flex;*/
 }
 
 /*________________________ Tablets ________________________*/
@@ -495,6 +482,29 @@ html {
 
 
 
+/*--------------------------------------------------------*/
+/* animaciones para que el menú en formato móvil y tablet aparezca de manera suave*/
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* bloqueo el scroll cuando el menú del móvil y tablet estén activos*/
+.No-scroll {
+    overflow: hidden;
+}
+
+.u-acento {
+    color: #F94E83;
+}
+/*--------------------------------------------------------*/
 
 
 

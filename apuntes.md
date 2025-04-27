@@ -9,6 +9,40 @@
                     Móvil: Reducir aún más el ancho (por ejemplo, 250x156 px)-->
 
 
+    /*.Header-nav {
+        padding: 0.5rem 1rem;
+    }
+
+    .Header-items {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .Header-secciones {
+        gap: 2rem;
+    }
+
+    .Header-boton {
+        display: block;
+        border: none;
+        font-size: 2rem;
+        color: #F4971C;
+        position: relative;
+    }
+
+    .Header-secciones {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #FCECEC;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 3rem;
+    }
+
+    .Header-secciones.activo {
+        display: flex;*/
 
 
 
