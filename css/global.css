@@ -497,39 +497,3 @@ html {
 
 
 
-
-/*
-/* Parte responsive del menu 
-media (max-width: 768px) {*/
-/*para que muestre el menú en móvil
-    .Header-boton {
-        display: block;
-        border: none;
-        font-size: 2rem;
-        color: #0E1E03;
-        position: relative;
-    }
-}
-
-.Header-secciones {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #FCECEC;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 3rem;
-}
-
-.Header-secciones.activo {
-    display: flex;
-}
-*/
-/*  Botón cerrar menú móvil
-.Header-secciones.activo .Header-boton {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-}
-*/

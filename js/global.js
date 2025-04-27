@@ -9,8 +9,6 @@ que tenga el usuario en la web.
 
 
 // funciones para menú desplegable (hamburguesa) en móvil
-
-
 // seleccionamos los elementos principales
 const btnHeader = document.querySelector('.Header-boton');
 const linksHeader = document.querySelector('.Header-secciones');
