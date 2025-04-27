@@ -1,4 +1,4 @@
-/*                                  Layout de la sección                                   */
+/*---------------------------- Layout de la sección ----------------------------*/
 .Flowers {
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@
     padding: 2rem;
 }
 
-/*                   Contenedor acordeón, contenido e imágenes thumbnail                   */
+/*---------------------------- Contenedor acordeón, contenido e imágenes thumbnail ----------------------------*/
 .Flowers-content {
     flex: 1 1 400px;
     display: flex;
@@ -40,7 +40,7 @@
 
 
 
-/*                   Acordeón                   */
+/*---------------------------- Acordeón ----------------------------*/
 
 /* subtítulo */
 .Flowers-subtitle {
@@ -99,12 +99,11 @@
     transform: rotate(45deg);
 }
 
-/*               Thumbnails (imágenes de abajo)               */
+/*---------------------------- Thumbnails (imágenes de abajo) ----------------------------*/
 .Flowers-thumbnails {
     display: flex;
     gap: 2rem;
     flex-wrap: nowrap;
-    /* no lo hace*/
 }
 
 .Flowers-thumb {

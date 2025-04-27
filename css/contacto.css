@@ -14,7 +14,7 @@
     margin: 0 auto;
 }
 
-/* Información de contacto */
+/*---------------------------- Información de contacto ----------------------------*/
 .Contact-info {
     flex: 1;
     min-width: 280px;
@@ -64,7 +64,7 @@
     text-decoration: none;
 }
 
-/* Formulario */
+/*---------------------------- Formulario ----------------------------*/
 .Contact-formContainer {
     flex: 1;
     min-width: 280px;
@@ -77,12 +77,8 @@
     padding-bottom: 1rem;
 }
 
-/*  formulario adaptado  */
+/* --------- formulario adaptado --------- */
 .Form {
-    /*height: 500px;
-    padding-left: 15em;
-    padding-right: 15rem;
-    justify-content: center;*/
     width: 100%;
 }
 
@@ -160,10 +156,9 @@
     font-family: 'Outfit-Regular';
 }
 
-
 /* MQ */
 
-/* Tablets */
+/* ---------  Tablets  --------- */
 @media (max-width: 768px) {
     .Contact-container {
         flex-direction: column;
@@ -194,7 +189,7 @@
     }
 }
 
-/* Móvil */
+/* ---------  Móvil  --------- */
 @media (max-width: 480px) {
     .Contact-title {
         font-size: 1.5rem;

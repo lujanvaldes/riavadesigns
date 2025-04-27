@@ -8,33 +8,7 @@ que tenga el usuario en la web.
 */
 
 
-// funciones para menú desplegable (hamburguesa) en móvil y tablet
-/*
-document.addEventListener('DOMContentLoaded', function(){
-    / selecciona el boton del menú y el contenedor hecho del menú
-    const botonMenu = document.querySelector('.Header-boton');
-    const menuSecciones =document.querySelector('.Header-secciones');
-
-   / vereficamos que ambos elementos existan antes de agregar los eventos
-    if(botonMenu && menuSecciones) {
-        botonMenu.addEventListener('click', function(){
-            / toggle para abrir y cerrar el menú
-            menuSecciones.classList.toggle('activo');
-        });
-    }
-});*/
-
-// hover en el logo del header
-/*
-const logo = document.querySelector('.Header-logo img');
-logo.addEventListener('mouseover', () =>{
-    logo.src = 'img/r-logo-claro.png';
-});
-
-logo.addEventListener('mouseout', ()=> {
-
-})*/
-
+// funciones para menú desplegable (hamburguesa) en móvil
 
 
 // seleccionamos los elementos principales

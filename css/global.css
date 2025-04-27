@@ -1,4 +1,4 @@
-/*                        Paleta Cromática                         */
+/*---------------------------- Paleta Cromática ----------------------------*/
 
 :root {
     --color-principal: #F94E83;
@@ -17,7 +17,7 @@ Pop y pequeños detalles: #F4971C
 */
 
 
-/*                           TIPOGRAFÍAS                           */
+/*----------------------------  TIPOGRAFÍAS  ----------------------------*/
 
 @font-face {
     font-family: 'PinyonScript-Regular';
@@ -30,7 +30,7 @@ Pop y pequeños detalles: #F4971C
 }
 
 
-/*              Texto de corrido con varias variables              */
+/*----------------------------  Texto de corrido con varias variables ----------------------------*/
 
 @font-face {
     font-family: 'Outfit-Regular';
@@ -48,7 +48,7 @@ Pop y pequeños detalles: #F4971C
     font-style: normal;
 }
 
-/*                  Reset                  */
+/*----------------------------  Reset   ----------------------------*/
 * {
     padding: 0;
     margin: 0;
@@ -60,7 +60,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/*                    Header/Menú                   */
+/*---------------------------- Header/Menú  ----------------------------*/
 
 .Header {
     display: flex;
@@ -158,7 +158,7 @@ html {
 
 
 
-/*                   Footer                   */
+/*---------------------------- Footer ----------------------------*/
 
 .Footer {
     background-color: #0E1E03;
@@ -170,7 +170,6 @@ html {
     width: 100%;
     height: 40vh;
 }
-
 
 .Footer-logo {
     height: 50px;
@@ -213,12 +212,9 @@ html {
 
 
 /*-----------------  Media Queries  -----------------*/
-
-
 /*________________________ Móvil ________________________*/
 /* tamaños 768px o menos */
 /* para pantallas pequeñas (móvil y tabletas en vertical) */
-
 
 @media (min-width: 481px) and (max-width: 768px) {
     :root {
@@ -260,11 +256,9 @@ html {
         gap: 3rem;
         background-color: #F4971C;
         color: #0E1E03;
-        /*width: 100%; RECOMENDADO POR CGT, YO LE PUSE VW*/
         width: 100%;
         height: 100vh;
         z-index: 100;
-        /*estos dos anteriores recomendado por otro*/
         margin-top: 0;
         text-align: center;
         font-size: 2rem;
@@ -272,8 +266,6 @@ html {
         transition: all 0.3s ease-in-out;
         position: fixed;
     }
-
-
 
     /* boton de cerrar en menú movil */
     .Menu-cerrar {
@@ -472,12 +464,6 @@ html {
 }
 
 
-
-
-
-
-
-/*--------------------------------------------------------*/
 /* animaciones para que el menú en formato móvil y tablet aparezca de manera suave*/
 @keyframes fadeIn {
     from {
@@ -491,7 +477,6 @@ html {
     }
 }
 
-
 /* bloqueo el scroll cuando el menú del móvil y tablet estén activos*/
 .No-scroll {
     overflow: hidden;
@@ -501,7 +486,6 @@ html {
     color: #F94E83;
 }
 
-/*--------------------------------------------------------*/
 
 
 

@@ -1,4 +1,4 @@
-/*Banner Principal*/
+/*---------------------------- Banner Principal ----------------------------*/
 .Banner {
     text-align: center;
     padding: 5rem 1rem;
@@ -9,7 +9,6 @@
     font-family: 'PinyonScript-Regular';
     color: #FCECEC;
     font-size: 3rem;
-
 }
 
 h1 {
@@ -25,15 +24,12 @@ h1 {
     padding-top: 1rem;
 }
 
-/*        Sección Ilustraciones        */
+/*---------------------------- Sección Ilustraciones ----------------------------*/
 
 .Creaciones {
     background-color: #F94E83;
-    text-align: center;/*
-    padding: 40px 20px;
-    padding-bottom: 10rem;*/
+    text-align: center;
 }
-
 
 /*   Título principal de la sección   */
 .Creaciones-title {
@@ -79,7 +75,6 @@ h1 {
     font-size: 1.5rem;
 }
 
-
 /*    Link en la imagen    */
 .Creacion-link {
     text-decoration: none;
@@ -101,8 +96,6 @@ h1 {
     display: block;
     }
 
-/*------------------------*/
-
 
 /*    Última parte    */
 .Subtitulo {
@@ -110,7 +103,6 @@ h1 {
     font-family: 'DelaGothicOne-Regular';
     font-size: 1.7rem;
 }
-
 
 .Texto-trabajos {
     color: #FCECEC;
@@ -173,8 +165,7 @@ h1 {
     height: auto;
 }
 
-
-/* Responsive */
+/*---------------------------- Responsive ----------------------------*/
 /*   Tablet   */
 @media (max-width: 1024px) {
     .Creaciones-title {

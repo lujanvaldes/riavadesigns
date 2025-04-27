@@ -1,4 +1,4 @@
-/*                                  Layout de la sección                                   */
+/*---------------------------- Layout de la sección ----------------------------*/
 .Planet {
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@
     padding: 2rem;
 }
 
-/*                   Contenedor acordeón, contenido e imágenes thumbnail                   */
+/*---------------------------- Contenedor acordeón, contenido e imágenes thumbnail ----------------------------*/
 .Planet-content {
     flex: 1 1 400px;
     display: flex;
@@ -40,7 +40,7 @@
 
 
 
-/*                   Acordeón                   */
+/*---------------------------- Acordeón ----------------------------*/
 
 /* subtítulo */
 .Planet-subtitle {
@@ -104,7 +104,6 @@
     display: flex;
     gap: 2rem;
     flex-wrap: nowrap;
-    /* no lo hace*/
 }
 
 .Planet-thumb {
